@@ -1,0 +1,18 @@
+#define pinRele_1 7
+#define pinRele_2 8
+
+void setup() {
+pinMode(pinRele_1, OUTPUT);
+pinMode(pinRele_2, OUTPUT);
+}
+
+void loop() {
+digitalWrite(pinRele_1, LOW);
+delay(1000);
+digitalWrite(pinRele_1, HIGH);
+delay(1000);
+digitalWrite(pinRele_2, LOW);
+delay(1000);
+digitalWrite(pinRele_2, HIGH);
+delay(1000);
+}
