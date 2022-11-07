@@ -1,5 +1,5 @@
-#define pinRele_1 7
-#define pinRele_2 8
+#define pinRele_A 3
+#define pinRele_B 8
 
 void setup() {
 pinMode(pinRele_1, OUTPUT);
@@ -7,12 +7,12 @@ pinMode(pinRele_2, OUTPUT);
 }
 
 void loop() {
-digitalWrite(pinRele_1, LOW);
+digitalWrite(pinRele_A, LOW);
 delay(1000);
-digitalWrite(pinRele_1, HIGH);
+digitalWrite(pinRele_A, HIGH);
 delay(1000);
-digitalWrite(pinRele_2, LOW);
+digitalWrite(pinRele_B, LOW);
 delay(1000);
-digitalWrite(pinRele_2, HIGH);
+digitalWrite(pinRele_B, HIGH);
 delay(1000);
 }
