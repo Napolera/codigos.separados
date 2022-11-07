@@ -1,0 +1,21 @@
+#include <Ultrasonic.h>
+
+#define pino_trigger 6
+#define pino_echo 7
+
+Ultrasonic ultrasonic(pino_trigger, pino_echo);
+
+void setup(){
+  Serial.begin(9600);
+  Serial.println("Lendo dados do sensor...");
+}
+
+void loop(){
+  float cm;
+  long microsec = ultrasonic.timing();
+  cm = ultrasonic.convert(microsec, Ultrasonic::CM);
+  
+  Serial.print("Distancia em cm: ");
+  Serial.println(cm);
+  delay(500);
+}
