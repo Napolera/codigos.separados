@@ -1,0 +1,15 @@
+#include "Servo.h"
+
+Servo servo;
+#define pinServo 13
+
+void setup() {
+  servo.attach(pinServo);
+}
+
+void loop() {
+    servo.write(70);
+    delay(500);
+    servo.write(90);
+    delay(500);
+}
